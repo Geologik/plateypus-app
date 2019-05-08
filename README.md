@@ -1,8 +1,11 @@
 # Plateypus App
 
-A simple app to look up car makes and models from license plates.
+[![Python 3](https://pyup.io/repos/github/Geologik/plateypus-app/python-3-shield.svg)](https://pyup.io/repos/github/Geologik/plateypus-app/)
+[![Requirements Status](https://requires.io/github/Geologik/plateypus-app/requirements.svg?branch=master)](https://requires.io/github/Geologik/plateypus-app/requirements/?branch=master)
+[![Updates](https://pyup.io/repos/github/Geologik/plateypus-app/shield.svg)](https://pyup.io/repos/github/Geologik/plateypus-app/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 
-### 🚗
+A simple app to look up car makes and models from license plates.
 
 ## Supported (Planned) Countries
 
