@@ -1,0 +1,25 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+bandit = "*"
+black = "==19.3b0"
+isort = "*"
+jedi = "*"
+pylint = "*"
+python-dotenv = "*"
+rope = "*"
+
+[packages]
+kivy = "*"
+requests = "*"
+
+[requires]
+python_version = "3.7"
+
+[scripts]
+debug = "python -m pytest -x --pdb\""
+lint = "python -m scripts.lint"
+test = "python -m pytest --cov-branch --cov-report term-missing:skip-covered --cov=plateypus\""
