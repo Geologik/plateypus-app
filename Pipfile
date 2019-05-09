@@ -13,11 +13,12 @@ python-dotenv = "*"
 rope = "*"
 
 [packages]
+cython = ">0.27.2"
 kivy = "*"
-requests = "*"
 packaging = "*"
 pytest = "*"
 pytest-cov = "*"
+requests = "*"
 
 [requires]
 python_version = "3.7"
