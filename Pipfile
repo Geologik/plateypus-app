@@ -13,13 +13,17 @@ python-dotenv = "*"
 rope = "*"
 
 [packages]
+cython = ">0.27.2"
 kivy = "*"
+packaging = "*"
+pytest = "*"
+pytest-cov = "*"
 requests = "*"
 
 [requires]
 python_version = "3.7"
 
 [scripts]
-debug = "python -m pytest -x --pdb\""
+debug = "python -m pytest -x --pdb"
 lint = "python -m scripts.lint"
-test = "python -m pytest --cov-branch --cov-report term-missing:skip-covered --cov=plateypus\""
+test = "python -m pytest --cov-branch --cov-report term-missing:skip-covered --cov=plateypus"
