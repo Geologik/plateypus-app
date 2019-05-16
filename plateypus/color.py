@@ -6,7 +6,7 @@ RGBA = namedtuple("RGBA", ["red", "green", "blue", "alpha"])
 
 
 def f2hex(flo):
-    """Convert floating point value `flo` (`0 <= f <=1 `) to a zero-padded hex string."""
+    """Convert floating point value `flo` (`0 <= f <=1`) to a zero-padded hex string."""
     if not 0 <= flo <= 1:
         raise ValueError("value must be between 0 and 1 (inclusive)", flo)
     intval = round(255 * flo)
@@ -36,6 +36,12 @@ class Color:
     def __init__(self, hexval="#00000000"):
         self.rgba = hex2rgba(hexval)
 
+    def __eq__(self, other):
+        """Test equality for two colors by comparing their hex value."""
+        if isinstance(other, Color):
+            return self.hex == other.hex
+        return False
+
     @property
     def hex(self):
         """Color expressed as HTML-style hex string."""
@@ -45,6 +51,24 @@ class Color:
         )
 
     @property
-    def kivy_color(self):
+    def kv_color(self):
         """Color expressed as a list appropriate for use with Kivy."""
         return [self.rgba.red, self.rgba.green, self.rgba.blue, self.rgba.alpha]
+
+
+class AppColors:
+    """The actual colors used in the app."""
+
+    # The class properties need to be pre-declared in order to be usable
+    # in the .kv files, which are built before `init()` can be called.
+    darkest = darker = medium = lighter = lightest = Color()
+
+    @staticmethod
+    def init(cfg):
+        """Initialize the colors as class properties."""
+        sect = "COLORSCHEME"
+        AppColors.darkest = Color(cfg.get(sect, "darkest"))
+        AppColors.darker = Color(cfg.get(sect, "darker"))
+        AppColors.medium = Color(cfg.get(sect, "medium"))
+        AppColors.lighter = Color(cfg.get(sect, "lighter"))
+        AppColors.lightest = Color(cfg.get(sect, "lightest"))

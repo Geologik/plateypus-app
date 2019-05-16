@@ -1,13 +1,28 @@
 """Tests for color module."""
 
 from collections import namedtuple
+from configparser import ConfigParser
 from random import uniform
 
-from pytest import approx, raises
+from pytest import approx, fixture, raises
 
 from plateypus import color
 
 InpExp = namedtuple("InpExp", ["input", "expected"])
+
+
+@fixture
+def cfg():
+    """Create a configuration fixture."""
+    cfgtxt = """[COLORSCHEME]
+darkest = #000000
+darker = #333333
+medium = #666666
+lighter = #CCCCCC
+lightest = #FFFFFF"""
+    cfgp = ConfigParser()
+    cfgp.read_string(cfgtxt)
+    return cfgp
 
 
 def approx_rgba(rgba1, rgba2):
@@ -116,12 +131,32 @@ def test_color_class_hex():
         assert inp_exp.input.hex == inp_exp.expected
 
 
-def test_color_class_kivy_color():
+def test_color_class_kv_color():
     """Test that Color instances return correct list properties."""
     inp_exps = [
-        InpExp(color.Color(), [0,0,0,0]),
-        InpExp(color.Color("#000000"), [0,0,0,1]),
-        InpExp(color.Color("#40FFAA80"), [0.25,1,2/3,0.5]),
+        InpExp(color.Color(), [0, 0, 0, 0]),
+        InpExp(color.Color("#000000"), [0, 0, 0, 1]),
+        InpExp(color.Color("#40FFAA80"), [0.25, 1, 2 / 3, 0.5]),
     ]
     for inp_exp in inp_exps:
-        assert approx(inp_exp.input.kivy_color, inp_exp.expected)
+        assert approx(inp_exp.input.kv_color, inp_exp.expected)
+
+
+def test_color_eq():
+    """Test correct implementation of `__eq__`."""
+    col1 = color.Color("#000000")
+    col2 = color.Color("#000000FF")
+    col3 = color.Color("#FFFFFF")
+    assert col1 == col2
+    assert col1 != col3
+    assert col2 != "foo"
+
+
+def test_appcolors_init(cfg):
+    """Test that AppColors are correctly set on init."""
+    color.AppColors.init(cfg)
+    assert color.AppColors.darkest == color.Color("#000000")
+    assert color.AppColors.darker == color.Color("#333333")
+    assert color.AppColors.medium == color.Color("#666666")
+    assert color.AppColors.lighter == color.Color("#CCCCCC")
+    assert color.AppColors.lightest == color.Color("#FFFFFF")
