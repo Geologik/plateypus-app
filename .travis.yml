@@ -7,8 +7,9 @@ git:
     depth: false
 cache: pip
 before_install:
-    # https://kivy.org/docs/installation/installation-linux.html#dependencies-with-sdl2
-    - sudo apt-get install build-essential python3-dev libav-tools libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev libportmidi-dev libswscale-dev libavformat-dev libavcodec-dev zlib1g-dev
+    - sudo add-apt-repository ppa:kivy-team/kivy
+    - sudo apt-get update
+    - sudo apt-get install python3-kivy build-essential python3-dev libav-tools libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev libportmidi-dev libswscale-dev libavformat-dev libavcodec-dev zlib1g-dev
 install:
     - pip install codecov
     - pip install --install-option="--no-cython-compile" "cython>0.27.2"
