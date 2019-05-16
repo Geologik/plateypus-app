@@ -17,7 +17,7 @@ install:
     - pip install --install-option="--no-cython-compile" "cython>0.27.2"
     - pip install pipenv
     - pipenv sync
-    - garden install --app iconfonts
+    - garden install iconfonts
 addons:
     sonarcloud:
         organization: kristian-thy50409
