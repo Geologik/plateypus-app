@@ -15,8 +15,8 @@ rope = "*"
 [packages]
 cython = ">0.27.2"
 kivy = "*"
-kivy-deps-glew = "*"
-kivy-deps-sdl2 = "*"
+kivy-deps-glew = {version = "*", platform_system = "== 'Windows'"}
+kivy-deps-sdl2 = {version = "*", platform_system = "== 'Windows'"}
 kivy-garden = "*"
 packaging = "*"
 pytest = "*"

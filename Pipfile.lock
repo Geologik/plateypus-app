@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "6bf5243adfff21d603a27d4d170d5293a67951a187e31cf2c93dfbc6578481e6"
+            "sha256": "c4b1762367dab60f967765c3fb92d2f77d1fa8a800cd473ce8d94738b76f8de4"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -168,21 +168,23 @@
                 "sha256:e97c0c0e13bb1b1041674162cc772844fbb63978d6cb2d6887c54d675114a745"
             ],
             "index": "pypi",
+            "markers": "platform_system == 'Windows'",
             "version": "==0.1.10"
         },
         "kivy-deps-sdl2": {
             "hashes": [
-                "sha256:35277b5b424fa9c396fee9f3a69553289ea3bf3c5854e3b9c307b4bf7fbd3114",
-                "sha256:5290f61051a76fe8be4f0fdd827c35ee0069e7ba1480c4a0247647db5a472c35",
-                "sha256:543f8dcb4dbbf3c28bd0dddbff257cbd6695c2b0e9687784937a111bc41b87a9",
-                "sha256:72c7489e0263a81c2426bf6a2e9b1176c01be2ae448afcb15b1d1a41e12f8a80",
-                "sha256:7c8deac99ad8cc278a8a3faba53a971da80e139b343ec5981527136993cca13b",
-                "sha256:a79c6c0d6089f7605593c37743a20228d1d29398e2cecc12c843e321f1f90a5c",
-                "sha256:b4757fcf02a1197db9180e3e14cee271cc70be7d6cd2ab0e6b73c6952445d1c9",
-                "sha256:fa695cd2d02f6f4959de5317d10546ecb46b3c2ac80482f8b4d3830841e0be32"
+                "sha256:1d3e55c563917490c715699119a811bdd334639de5ba299f8d571574c1b23d02",
+                "sha256:5a851bb0fc65ef1e5da8135a76d51c9b2b6312d110c74a8245fd77aba4a81785",
+                "sha256:5d00d61ca1db74548f3a8902fc370a7500b29c489c051993598ea7633553dd0f",
+                "sha256:7056e908213bbe559832a8857ca5f1ad3b7a4a5248636b946eca4b805dd230b0",
+                "sha256:78a93d72dca48c54bf7f88e3c1789649e63a7c02789c27dea3ebde86e4ddfe59",
+                "sha256:8e4bc593b21c280138f793a1fa3fcd8f6106b575ebab7ca15fa7bce812815321",
+                "sha256:a087509adfe95f4e3e87b4407be876e959456452c36fe18997208d1f5b2c210b",
+                "sha256:df29a17871d26ff983735cfecfa2662b66d0cca98417962770276a9c1f28c8b4"
             ],
             "index": "pypi",
-            "version": "==0.1.19"
+            "markers": "platform_system == 'Windows'",
+            "version": "==0.1.20"
         },
         "kivy-garden": {
             "hashes": [
@@ -353,6 +355,7 @@
                 "sha256:c40744b6bc5162bbb39c1257fe298b7a393861d50978b565f3ccd9cb9de0182a",
                 "sha256:f57abacd059dc3bd666258d1efb0377510a89777fda3e3274e3c01f7c03ae22d"
             ],
+            "index": "pypi",
             "version": "==4.3.20"
         },
         "jedi": {
