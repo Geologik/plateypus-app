@@ -1,0 +1,52 @@
+#:kivy 1.10.1
+#:import icon kivy.garden.iconfonts.icon
+#:import AppColors color.AppColors
+#:import version main.VERSION
+
+<Plateypus>:
+    f_query: query
+    f_field: field
+    rows: 2
+    cols: 3
+    padding: 10
+    spacing: 10
+    Label:
+        text: u"Search for \u2026"
+    TextInput:
+        id: query
+    FieldDropDown:
+        id: field
+    Button:
+        text: "%s" % (icon("fa-plus"))
+        markup: True
+        on_press: root.do_add_query_field()
+    Label:
+        text: "Plateypus v" + str(version)
+        color: AppColors.lighter.kv_color
+        halign: "center"
+    Button:
+        text: "%s" % (icon("fa-search"))
+        markup: True
+        on_press: root.do_search()
+
+<FieldDropDown>:
+    Button:
+        text: "License plate"
+        height: 44
+        size_hint_y: None
+        on_release: root.select("plate")
+    Button:
+        text: "VIN"
+        height: 44
+        size_hint_y: None
+        on_release: root.select("vin")
+    Button:
+        text: "Maker"
+        height: 44
+        size_hint_y: None
+        on_release: root.select("maker")
+    Button:
+        text: "Model"
+        height: 44
+        size_hint_y: None
+        on_release: root.select("model")

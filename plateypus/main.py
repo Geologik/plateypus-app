@@ -3,53 +3,63 @@
 from os.path import abspath
 
 from kivy.app import App
-from kivy.config import Config
 from kivy.core.window import Window
-from kivy.uix.label import Label
+from kivy.garden.iconfonts import register as register_iconfont
+from kivy.properties import StringProperty
+from kivy.uix.dropdown import DropDown
+from kivy.uix.gridlayout import GridLayout
 from packaging.version import Version
 
-from plateypus.color import Color
+from plateypus.color import AppColors
 
-COLORS = dict()
-INI_SECTION = "colorscheme"
-COLOR_DARKEST = "darkest"
-COLOR_DARKER = "darker"
-COLOR_MEDIUM = "medium"
-COLOR_LIGHTER = "lighter"
-COLOR_LIGHTEST = "lightest"
 VERSION = Version("0.0.1")
 
 
-def set_colors(cfg):
-    COLORS[COLOR_DARKEST] = Color(cfg.get(INI_SECTION, COLOR_DARKEST))
-    COLORS[COLOR_DARKER] = Color(cfg.get(INI_SECTION, COLOR_DARKER))
-    COLORS[COLOR_MEDIUM] = Color(cfg.get(INI_SECTION, COLOR_MEDIUM))
-    COLORS[COLOR_LIGHTER] = Color(cfg.get(INI_SECTION, COLOR_LIGHTER))
-    COLORS[COLOR_LIGHTEST] = Color(cfg.get(INI_SECTION, COLOR_LIGHTEST))
+class FieldDropDown(DropDown):
+    """Dropdown containing possible fields to search."""
+
+    pass
+
+
+class Plateypus(GridLayout):
+    """Root layout."""
+
+    query = StringProperty()
+    field = StringProperty("plate")
+
+    def do_add_query_field(self):
+        """Add another query field row."""
+        raise NotImplementedError
+
+    def do_search(self):
+        """Execute a search."""
+        raise NotImplementedError
 
 
 class PlateypusApp(App):
+    """The main application class."""
+
     def build(self):
-        set_colors(self.config)
-        Window.clearcolor = COLORS[COLOR_DARKER].kivy_color
-        splash = Label(
-            text=f"[color={COLORS[COLOR_LIGHTEST].hex}][b]Plateypus[/b][/color]\n{VERSION}\n{abspath('.')}",
-            markup=True,
+        register_iconfont(
+            "default_font", "assets/fa-v5.8.2-solid-900.ttf", "assets/fontawesome.fontd"
         )
-        return splash
+        AppColors.init(self.config)
+        Window.clearcolor = AppColors.darker.kv_color
+        return Plateypus()
 
     def build_config(self, config):
+        config.setdefaults("BACKEND", dict(url="http://127.0.0.1:5000"))
         config.setdefaults(
-            INI_SECTION,
-            {
-                COLOR_DARKEST: "#212922",
-                COLOR_DARKER: "#294936",
-                COLOR_MEDIUM: "#3E6259",
-                COLOR_LIGHTER: "#5B8266",
-                COLOR_LIGHTEST: "#C9F8D9",
-            },
+            "COLORSCHEME",
+            dict(
+                darkest="#212922",
+                darker="#294936",
+                medium="#3E6259",
+                lighter="#5B8266",
+                lightest="#C9F8D9",
+            ),
         )
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     PlateypusApp().run()
