@@ -15,18 +15,19 @@ rope = "*"
 [packages]
 cython = ">0.27.2"
 kivy = "*"
-kivy-deps-glew = {version = "*", platform_system = "== 'Windows'"}
-kivy-deps-sdl2 = {version = "*", platform_system = "== 'Windows'"}
+kivy-deps-glew = {version = "*",platform_system = "== 'Windows'"}
+kivy-deps-sdl2 = {version = "*",platform_system = "== 'Windows'"}
 kivy-garden = "*"
 packaging = "*"
 pytest = "*"
 pytest-cov = "*"
 requests = "*"
+requests-mock = "*"
 
 [requires]
 python_version = "3.7"
 
 [scripts]
-debug = "python -m pytest -x --pdb"
+debug = "python -m pytest --exitfirst --pdb"
 lint = "python -m scripts.lint"
 test = "python -m pytest --cov-branch --cov-report term-missing:skip-covered --cov=plateypus"
