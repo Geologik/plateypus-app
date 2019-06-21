@@ -133,24 +133,24 @@
         },
         "kivy": {
             "hashes": [
-                "sha256:357fd0384f65254b971bc7194fb8731202371b442169bfe9779a3643cb2d5177",
-                "sha256:374ad97881c884d25ee923a22250924cd1e8d16ddf26ff61c65c18ba3c8dc529",
-                "sha256:39929e72feb6f02daf44ec8da4d45d31544a6494dabaa4c0b40b3b1d799067f1",
-                "sha256:3ca7f0181c866a831d5149ef4b643509f0514cba6db0e4d36d0ca6f17c3fe62d",
-                "sha256:62f944576e2aaf1cec3c98c9760716a628f7170743da8bee4bcfed911dc27c5e",
-                "sha256:7d43afdf365be1b19999f8d8b2529df6c2ba40ff8360675a15949bd188af23e9",
-                "sha256:80e4469f0df69ca251b2955e8643df1554afbcb59fea380839224e5b29edf1fe",
-                "sha256:967dffdf24674a439f5c1be7bad56c74650466e6a57828999f94e8687dab7945",
-                "sha256:a7f49b006bec40a52d1073dde81d3d8021be1bea9f41cbf6d1f6102a28d22d1f",
-                "sha256:b6484e3eef8ff3a0139623942dacac4bce2b3e71f440056382b5866e27129b82",
-                "sha256:bcb4614e53ef5944922e8eb6d1fe2b0a9694e2e2dcd867f5ce7e89c35117c192",
-                "sha256:c502425aca2e62a4e0b36a9dd47dcf862a1ba41fda1ee4b9a94761528a0d8b9c",
-                "sha256:d61c0642aac6edc062863afc933228a2f9efd2eb42e1704a387ab481d66143e2",
-                "sha256:e13ff80890bdc740419b5b2c8bf785107d91e4245360862b1ff32cd39b1e63c5",
-                "sha256:e9532e4619ab8ad7b7b6422b12b91fe10b8d5e2cc998f83e9437c4348fe50294",
-                "sha256:ec742c5a20f31bf7000ec9e834f1f03af290a595cec862943a971a70f5cf3521"
+                "sha256:090d3ded9835a17477cd93fbdaf0a7c42ff2218981cf198ded5ad8795bc74391",
+                "sha256:11e85eaf6efbfa2362a3334ffdad179a1b0ca8d255cca79eaa6a2765560d4982",
+                "sha256:1a1ff32f8a95f1e175198cbab81fcd2596783b180d4eafe63e87d171aa7fdb5e",
+                "sha256:1d28b198a64c30db8d94a0488e85f3037af60d514ab0d7ad5ab45add3ab77090",
+                "sha256:4a5480cbf837d3780c77a4f61b32b56d22ae9f03845e7a89dd3eaef1ae5fd037",
+                "sha256:4d0e596f74271e901b551f77661dde238df4765484fce9f5d1c72e8022984e84",
+                "sha256:5c3d0f2749522d62e9cce09cd54b2d823bf1b6b644ff1f627be49de6f3e3cba0",
+                "sha256:815a5c0b3b72fcd81ca7b2aa0744087163ed03e4cf9ab4e7c9733cea99fc1571",
+                "sha256:8819a27a09871af451760cb69486ced52e830c8a0a37480f22ef5e692f12c05b",
+                "sha256:a687602d90c4629dd036f577ca39acb76ba581370f9d915f3cab99be818ba8ad",
+                "sha256:b7ef6aad43a86d8df3fb865db864e354f2155a748019f8517f69f65c1a29cb64",
+                "sha256:b85ccf165050cbf2ee8447671eebbc222b369b40f0e0038dd9547d49a5e37373",
+                "sha256:c36652caa7f6c327dee834cfc699d5962d346b7a53e54bd81abc17c314226d89",
+                "sha256:ece170514db3f49844a41e4c910ad9ce9bc46da6f47a49158e11266bdcc6e479",
+                "sha256:f3bea6e4a21991827885d04127fc6d09a0e974ecfa12da7bf5faae93562ea102",
+                "sha256:f835462dd9aa491272552ef079b948a088598e2e95d68bb1d885d2c3f3d4e2c3"
             ],
-            "version": "==1.11.0"
+            "version": "==1.11.1"
         },
         "kivy-deps-glew": {
             "hashes": [
