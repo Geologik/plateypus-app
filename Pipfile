@@ -1,23 +1,18 @@
 [[source]]
-
 name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
 
-
 [dev-packages]
-
 bandit = "*"
-black = "==19.10b0"
+black = "==22.1.0"
 isort = "*"
 jedi = "*"
 pylint = "*"
 python-dotenv = "*"
 rope = "*"
 
-
 [packages]
-
 cython = ">0.27.2"
 kivy = "*"
 kivy-garden = "*"
@@ -26,27 +21,13 @@ pytest = "*"
 pytest-cov = "*"
 requests = "*"
 requests-mock = "*"
-
+kivy-deps-glew = {platform_system = "== 'Windows'",version = "*"}
+kivy-deps-sdl2 = {platform_system = "== 'Windows'",version = "*"}
 
 [requires]
-
 python_version = "3.7"
 
-
 [scripts]
-
 debug = "python -m pytest --exitfirst --pdb"
 lint = "python -m scripts.lint"
 test = "python -m pytest --cov-branch --cov-report term-missing:skip-covered --cov=plateypus"
-
-
-[packages.kivy-deps-glew]
-
-version = "*"
-platform_system = "== 'Windows'"
-
-
-[packages.kivy-deps-sdl2]
-
-version = "*"
-platform_system = "== 'Windows'"
