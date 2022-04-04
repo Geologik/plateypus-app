@@ -213,26 +213,18 @@
         },
         "kivy-deps-sdl2": {
             "hashes": [
-                "sha256:004b59de00bcb604aeb032c5c974d1e9c199963e0b77270d04c6eef6918adeae",
-                "sha256:0e7016db5374e358f412b48306f49cde3438fb2e481fa4e26e8fb89f36bd0d26",
-                "sha256:1d3e55c563917490c715699119a811bdd334639de5ba299f8d571574c1b23d02",
-                "sha256:1ea6e95b3c9861c08a143e9956236abd7984f46057583a427bca2a61294e0c01",
-                "sha256:240634bf918c5eab7cecb2e67712a20bd0e29717bd8ad56199961dcd65222a22",
-                "sha256:48ea6cef7749c4f6b703c16e9d17f9499686b63da097e383c6d91975720717b0",
-                "sha256:5a851bb0fc65ef1e5da8135a76d51c9b2b6312d110c74a8245fd77aba4a81785",
-                "sha256:5d00d61ca1db74548f3a8902fc370a7500b29c489c051993598ea7633553dd0f",
-                "sha256:7056e908213bbe559832a8857ca5f1ad3b7a4a5248636b946eca4b805dd230b0",
-                "sha256:76f6f515256310a3ca8d4b4c2e9514c421106d0284f7e9c6934d8825ef852482",
-                "sha256:78a93d72dca48c54bf7f88e3c1789649e63a7c02789c27dea3ebde86e4ddfe59",
-                "sha256:8e4bc593b21c280138f793a1fa3fcd8f6106b575ebab7ca15fa7bce812815321",
-                "sha256:a087509adfe95f4e3e87b4407be876e959456452c36fe18997208d1f5b2c210b",
-                "sha256:c070ced6042654b2df1491f80cfab9948c7bee76e5978f2d1b1f3c104ebaa829",
-                "sha256:dcc2a93248cc0ab0905b2fc941f51396a92e20554af34b351816fc0d79b4fd4a",
-                "sha256:df29a17871d26ff983735cfecfa2662b66d0cca98417962770276a9c1f28c8b4"
+                "sha256:0eb620812b60c7cba067b2c4770a2a8a633b18064dc7b777fe887b881e1990c4",
+                "sha256:1004b694ca048d3d4d8100e8e521b54a80bb6ac39c534d6918896731fb631a9a",
+                "sha256:14edd9043a1145afedba5eb6225cd7e8a1f5724f2ead05b10db7e1e1686ae353",
+                "sha256:2d39869ed1c8fdb8d21f5cb13b136c82fdb694f2c008a8a80608ca0460f666b6",
+                "sha256:55946dc99c02a02fca1843407c5a67e3e20ca4d67ec2378da8f71897bf48f05c",
+                "sha256:593b5564c332fa92553a6e0599e39c3d95ea6ec923f9e070f0e0aa5ce8068bf9",
+                "sha256:9817003d1643b84ba7e26dd8313c6715cb439293e35f3496af014f1a3a242bb5",
+                "sha256:af4e450037bc8b8edb6a902861f49244ce687e679fa5aa681433d26b47ab216a",
+                "sha256:f3cd7cdc5634186fd45a66c34aec3dc1be28811b52c250b3094778bf67f1b019",
+                "sha256:f40efe66cd730ef5855e42f9d5972a53b7a2b811cf007e21eedd38000456eacf"
             ],
-            "index": "pypi",
-            "markers": "platform_system == 'Windows'",
-            "version": "==0.1.20"
+            "version": "==0.4.2"
         },
         "kivy-garden": {
             "hashes": [
