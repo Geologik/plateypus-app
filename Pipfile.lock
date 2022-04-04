@@ -216,10 +216,10 @@
         },
         "kivy-garden": {
             "hashes": [
-                "sha256:c256f42788421273a08fbb0a228f0fb0e80dd86b629fb8c0920507f645be6c72"
+                "sha256:2b8377378e87501d5d271f33d94f0e44c089884572c64f89c9d609b1f86a2748",
+                "sha256:ef50f44b96358cf10ac5665f27a4751bb34ef54051c54b93af891f80afe42929"
             ],
-            "index": "pypi",
-            "version": "==0.1.4"
+            "version": "==0.1.5"
         },
         "more-itertools": {
             "hashes": [
