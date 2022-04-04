@@ -203,18 +203,16 @@
         },
         "kivy-deps-sdl2": {
             "hashes": [
-                "sha256:0eb620812b60c7cba067b2c4770a2a8a633b18064dc7b777fe887b881e1990c4",
-                "sha256:1004b694ca048d3d4d8100e8e521b54a80bb6ac39c534d6918896731fb631a9a",
-                "sha256:14edd9043a1145afedba5eb6225cd7e8a1f5724f2ead05b10db7e1e1686ae353",
-                "sha256:2d39869ed1c8fdb8d21f5cb13b136c82fdb694f2c008a8a80608ca0460f666b6",
-                "sha256:55946dc99c02a02fca1843407c5a67e3e20ca4d67ec2378da8f71897bf48f05c",
-                "sha256:593b5564c332fa92553a6e0599e39c3d95ea6ec923f9e070f0e0aa5ce8068bf9",
-                "sha256:9817003d1643b84ba7e26dd8313c6715cb439293e35f3496af014f1a3a242bb5",
-                "sha256:af4e450037bc8b8edb6a902861f49244ce687e679fa5aa681433d26b47ab216a",
-                "sha256:f3cd7cdc5634186fd45a66c34aec3dc1be28811b52c250b3094778bf67f1b019",
-                "sha256:f40efe66cd730ef5855e42f9d5972a53b7a2b811cf007e21eedd38000456eacf"
+                "sha256:0126c141dad69147315c43144c1e5356982860bed49ced1ad186616ae33b761a",
+                "sha256:1884e0ce5d1f47ccf63b55021e2b2c04eae433111f2c246a82f4c06697624def",
+                "sha256:660c23993aa0df2de18dcc4e0fce2e1344e800469a702f49459f18762ebe5aa0",
+                "sha256:6c79f225ac3954ba552c23f4313e5304663703d225f648b032861ad506bd79e2",
+                "sha256:8a54e000813471ae141ed4304eb34ee90b27c06f95565507e11e138f693c3885",
+                "sha256:97be14de619deb853867b66355a1eea9f26d572c94888e934ca9fd8fcf3593b2",
+                "sha256:9a375da3c9cda088e318d920555be72aa0af753a24476d08f42894ef7a6ac73d",
+                "sha256:c3fa7218478dff2f6deb357c6c8e50856c7153b9ba8cb6f4f7a0e70b50f1b3a1"
             ],
-            "version": "==0.4.2"
+            "version": "==0.4.5"
         },
         "kivy-garden": {
             "hashes": [
