@@ -633,10 +633,10 @@
         },
         "rope": {
             "hashes": [
-                "sha256:16f652d3002296778d463db329da6a05d914a4dbde30ea6da76362da06c0ebb7",
-                "sha256:67749b582d57954f288b0441fae93e8f4c166d7e93fc29c430bd4db28ec904d0"
+                "sha256:09aeb99b8932661a40cd3a0a9d2245271fa7a565806d45271aa79eebd69b5626",
+                "sha256:2f24190da86556dadab58ab2d5629d8410803cc3985ef9dbbf559d15e72d6607"
             ],
-            "version": "==1.0.0"
+            "version": "==1.1.0"
         },
         "six": {
             "hashes": [
