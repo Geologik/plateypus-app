@@ -43,11 +43,8 @@
             "version": "==0.29.32"
         },
         "docutils": {
-            "hashes": [
-                "sha256:23010f129180089fbcd3bc08cfefccb3b890b0050e1ca00c867036e9d161b98c",
-                "sha256:679987caf361a7539d76e584cbeddc311e3aee937877c87346f31debc63e9d06"
-            ],
-            "version": "==0.18.1"
+            "hashes": [],
+            "version": "==0.19"
         },
         "idna": {
             "hashes": [
