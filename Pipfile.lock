@@ -52,7 +52,7 @@
         },
         "importlib-metadata": {
             "hashes": [],
-            "version": "==4.13.0"
+            "version": "==5.0.0"
         },
         "iniconfig": {
             "hashes": [
@@ -256,7 +256,7 @@
         },
         "importlib-metadata": {
             "hashes": [],
-            "version": "==4.13.0"
+            "version": "==5.0.0"
         },
         "isort": {
             "hashes": [
