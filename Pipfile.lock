@@ -222,7 +222,7 @@
         },
         "astroid": {
             "hashes": [],
-            "version": "==2.12.10"
+            "version": "==2.12.11"
         },
         "attrs": {
             "hashes": [],
