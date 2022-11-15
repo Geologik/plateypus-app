@@ -159,7 +159,7 @@
         },
         "exceptiongroup": {
             "hashes": [],
-            "version": "==1.0.2"
+            "version": "==1.0.4"
         },
         "idna": {
             "hashes": [
